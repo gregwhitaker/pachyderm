@@ -15,24 +15,25 @@ if __name__ == '__main__':
     # Parsing the export file
     doc = etree.parse(sys.argv[1])
 
-    processedCnt = 0
+    totalCnt = 0
+    includedCnt = 0
     excludedCnt = 0
 
     # Iterate over all "note" tags in the document
     for element in doc.iter("note"):
-        personal = False
+        exclude = False
         for tagElement in element.iter("tag"):
             if tagElement.text == 'personal':
-                personal = True
                 excludedCnt += 1
+                element.getparent().remove(element)
+                exclude = True
                 break
 
-        if not personal:
-            print element
+        if not exclude:
+            includedCnt += 1
 
-        processedCnt += 1
+        totalCnt += 1
 
-    print "Total Notes: " + str(processedCnt)
+    print "Exported Notes: " + str(includedCnt)
     print "Excluded Notes: " + str(excludedCnt)
-    sys.exit(0)
-
+    print "Total Notes: " + str(totalCnt)
