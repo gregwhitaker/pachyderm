@@ -16,3 +16,8 @@ Pachyderm requires that you specify the following arguments:
 * input_file - The path to read the input Evernote ENEX file to process
 * output_file - The path to write the post-processed Evernote ENEX output file
 * tag - Notes tagged with this tag will not be included in the output file
+
+###Example
+The following command will load notes from the *sample.enex* file, remove any notes tagged "*private*", and write the remaining notes to the *output.enex* file.
+
+    $ python pachyderm ./sample/sample.enex ./sample/output.enex private
