@@ -9,10 +9,10 @@ You can install pachyderm using pip.
 
 ##Usage
 
-    $ python pachyderm <export_file> <output_file> <tag>
+    $ python pachyderm <input_file> <output_file> <tag>
     
 Pachyderm requires that you specify the following arguments:
 
-* export_file - The path to read the export file to process
-* output_file - The path to write the post-processed export file
-* tag - Notes tagged with this tag will not be included in the post-processed export file
+* input_file - The path to read the input Evernote ENEX file to process
+* output_file - The path to write the post-processed Evernote ENEX output file
+* tag - Notes tagged with this tag will not be included in the output file
