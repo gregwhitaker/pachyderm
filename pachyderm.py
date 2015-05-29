@@ -14,7 +14,7 @@ if __name__ == '__main__':
     outputFile = sys.argv[2]
     tag = sys.argv[3]
 
-    print "Processing Evernote Export File: " + inputFile
+    print "Processing: " + inputFile
 
     # Parsing the input file
     parser = etree.XMLParser(strip_cdata=False)
@@ -46,3 +46,6 @@ if __name__ == '__main__':
     print "Exported Notes: " + str(includedCnt)
     print "Excluded Notes: " + str(excludedCnt)
     print "Total Notes: " + str(totalCnt)
+
+    print ""
+    print "Output: " + outputFile
