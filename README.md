@@ -4,4 +4,4 @@ Pachyderm is a simple Python script that processes Evernote export files and rem
 
 ##Usage
 
-  $ python pachyderm <export file> <output file> <tag>
+    $ python pachyderm <export file> <output file> <tag>
