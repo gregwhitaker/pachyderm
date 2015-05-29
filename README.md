@@ -1,3 +1,5 @@
 pachyderm
 ===
-Simple script that processes an Evernote export file and removes all notes that are tagged with a "personal" tag.
+
+Pachyderm is a simple Python script that processes Evernote export files and removes notes based upon their tagging.
+
