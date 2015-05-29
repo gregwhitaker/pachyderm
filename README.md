@@ -9,7 +9,7 @@ You can install pachyderm using pip.
 
 ##Usage
 
-    $ python pachyderm <export file> <output file> <tag>
+    $ python pachyderm <export_file> <output_file> <tag>
     
 Pachyderm requires that you specify the following arguments:
 
