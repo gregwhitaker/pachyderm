@@ -1,13 +1,12 @@
-pachyderm
-===
+# pachyderm
 Pachyderm is a simple Python script that processes Evernote export files and removes notes based upon their tagging.
 
-##Installation
+## Installation
 You can install pachyderm using pip.
 
     $ pip install -r requirements.txt
 
-##Usage
+## Usage
 
     $ python pachyderm <input_file> <output_file> <tag>
     
